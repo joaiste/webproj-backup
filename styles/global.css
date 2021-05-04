@@ -1,0 +1,425 @@
+* {
+  box-sizing: border-box; /*in order to include padding & border in to width & height adjustments*/
+  /*not used in the body as the browser resets the inheritance by using block parameter*/
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", "calibri", sans-serif;
+  background-image: url("../extras/backg04.jpg");
+}
+
+main {
+  min-height: calc(100vh - 7.5rem - 9.25rem);
+  margin: 0 17rem;
+  margin-top: 7rem;
+  margin-bottom: 6rem;
+}
+
+/*=================================================*/
+/*===MAIN NAV-BAR==================================*/
+/*=================================================*/
+
+#header-1 {
+  background-color: #626e7c;
+}
+
+.main-header {
+  padding: 2rem 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  width: 8rem;
+  display: flex;
+}
+
+.site-name {
+  color: #d9ed92;
+  font-weight: bold;
+}
+
+.site-name h1 {
+  margin-top: 0;
+  text-transform: none;
+}
+
+.top-nav {
+  display: block;
+  width: 36rem;
+}
+
+.top-nav-all-items {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav-item a,
+.mobile-top-nav-item a {
+  text-decoration: none;
+  color: #d9ed92;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.top-nav-item a:hover,
+.top-nav-item a:active,
+.mobile-top-nav-item a:hover,
+.mobile-top-nav-item a:active {
+  background-color: #9bc49a;
+  border-radius: 10px;
+}
+
+/*=================================================*/
+/*===BOTTOM NAV-BAR================================*/
+/*=================================================*/
+
+.toggle-menu-button {
+  display: none;
+}
+
+#header-2 {
+  display: block;
+  background-color: #d9ed92;
+  margin-bottom: 0.5rem;
+}
+
+.sub-header {
+  margin-left: 15rem;
+  padding: 0.25rem;
+  margin-right: 17rem;
+  display: flex;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.bottom-nav-all-items {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+
+.bottom-nav-all-items .bottom-nav-item {
+  margin-right: 1rem;
+}
+
+.bottom-nav-item a {
+  text-decoration: none;
+  padding-right: 1.5rem;
+}
+
+/*=================================================*/
+/*===SEARCH BAR====================================*/
+/*=================================================*/
+
+.search-box {
+  height: 1.75rem;
+  justify-content: center;
+  display: flex;
+  margin-left: 1.25rem;
+}
+
+.search-box .search-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 28rem;
+  border: #626e7c solid;
+  border-radius: 0.25rem;
+}
+
+.search-button {
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+/*=================================================*/
+/*===SIDE BAR -- MOBILE============================*/
+/*=================================================*/
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #586370;
+  width: 17rem;
+  height: 100%; /*ensures 100% of the viewport will be taken up*/
+}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-container button {
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav-container button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobile-nav-container button img:hover {
+  background-color: #9bc49a;
+  border-radius: 0.2rem;
+}
+
+.mobile-top-nav-items {
+  list-style: none;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-top-nav-item {
+  margin-bottom: 1.5rem 0;
+}
+
+.mobile-bottom-nav-item a img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.mobile-bottom-nav-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+/*=================================================*/
+/*===FOOTER========================================*/
+/*=================================================*/
+
+footer {
+  margin-top: 4rem;
+  width: 118.95rem;
+  padding: 1rem 0;
+  background-color: #a4afb4;
+}
+
+.footer-content-container {
+  font-size: 0.75rem;
+}
+
+.main-footer-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  max-width: 118rem;
+}
+
+.main-footer-item a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: rgb(53, 51, 51);
+}
+
+.main-footer-item a:hover,
+.main-footer-item a:active {
+  color: black;
+  border-bottom: black dotted;
+}
+
+/*=================================================*/
+/*=================================================*/
+/*=================================================*/
+/*===================MEDIA-QUERIES=================*/
+/*=================================================*/
+/*=================================================*/
+/*=================================================*/
+
+/*-------------*/
+/*---DESKTOP---*/
+/*-------------*/
+
+@media (max-width: 120rem) {
+  .toggle-menu-button {
+    visibility: hidden;
+  }
+}
+
+/*--------------*/
+/*---IPAD PRO---*/
+/*--------------*/
+
+@media (max-width: 64rem) {
+  main {
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    min-width: 56rem;
+  }
+
+  footer {
+    margin-top: 6rem;
+    width: 64rem;
+  }
+}
+
+/*------------*/
+/*----IPAD----*/
+/*------------*/
+
+/*main*/
+@media (max-width: 48rem) {
+  main {
+    margin: 0 2rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    min-width: 44rem;
+  }
+
+  footer {
+    margin-top: 6rem;
+    width: 48rem;
+  }
+}
+
+/*navigation*/
+
+@media (max-width: 48rem) {
+  .toggle-menu-button {
+    visibility: hidden;
+  }
+
+  .site-name {
+    color: #d9ed92;
+    font-weight: bold;
+  }
+
+  .main-header {
+    padding: 2rem 3rem;
+  }
+
+  .top-nav {
+    width: 30rem;
+  }
+
+  .sub-header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/*----------------*/
+/*---SMARTPHONE---*/
+/*----------------*/
+
+/*---main---*/
+@media (max-width: 26rem) {
+  main {
+    margin: 0 2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    min-width: 26rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    width: 30rem;
+  }
+}
+
+/*---header---*/
+@media (max-width: 26rem) {
+  header {
+    min-width: 30rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-left {
+    width: 10rem;
+  }
+
+  .site-name h1 {
+    font-size: 2rem;
+  }
+
+  #header-2 {
+    display: none;
+  }
+
+  .top-nav {
+    display: none;
+  }
+}
+
+/*---side-nav toggle---*/
+@media (max-width: 26rem) {
+  .toggle-menu-button {
+    display: block;
+    visibility: visible;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.4rem;
+  }
+
+  .header-left {
+    display: flex;
+  }
+
+  .site-name {
+    font-size: 1.5rem;
+  }
+
+  .toggle-menu-button img:active {
+    border: #9bc49a solid;
+  }
+}
+
+/*---side-nav-menu---*/
+@media (max-width: 26rem) {
+  .backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 47, 50, 0.494);
+  }
+
+  .mobile-top-nav-item {
+    padding: 1rem;
+  }
+
+  .mobile-top-nav-item a {
+    font-size: 1.6rem;
+  }
+}

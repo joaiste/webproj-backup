@@ -1,0 +1,258 @@
+/*HEADER SECTION*/
+
+.top-nav-item:nth-child(4) {
+  border-bottom: #97a564 solid;
+}
+
+main {
+  margin-top: 5rem; /*overriding global value*/
+}
+
+.site-name h1 {
+  text-transform: none;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #626e7c;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  background-color: rgb(252, 196, 170);
+  color: #1e2227;
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 22.5rem;
+  height: 27rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.contact-form input {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.contact-form input[type="checkbox"]:checked {
+  background-color: #d9ed92;
+  border: #d9ed92 inset 0.1rem;
+}
+
+.contact-form input[type="checkbox"]:hover {
+  background-color: #76c3e4;
+}
+
+.terms-agreement {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form button {
+  width: 5rem;
+  text-transform: uppercase;
+  color: #d9ed92;
+  font-weight: bold;
+  align-self: center;
+  appearance: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #626e7c;
+}
+
+.contact-form button:hover,
+.contact-form button:active {
+  background-color: #d9ed92;
+  color: #626e7c;
+}
+
+/*=================================================*/
+/*===API SECTION===================================*/
+/*=================================================*/
+
+.api-container {
+  border: rgb(252, 196, 170) solid;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 20rem;
+  height: 27rem;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fox-pic-result {
+  width: 15rem;
+  height: 21rem;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+}
+
+.fox-pic-result p {
+  align-self: center;
+  margin-left: 2rem;
+}
+
+.fox-pic-result img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.2rem;
+  z-index: 10;
+}
+
+.get-fox-button {
+  color: #d9ed92;
+  text-transform: uppercase;
+  font-weight: bold;
+  appearance: none;
+  cursor: pointer;
+  background-color: #626e7c;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0;
+  width: 15rem;
+  margin-top: 2rem;
+}
+
+.get-fox-button:hover,
+.get-fox-button:active {
+  background-color: #d9ed92;
+  color: #626e7c;
+}
+
+#get-info {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#get-info form {
+  justify-self: center;
+  display: flex;
+  background-color: rgba(71, 118, 204, 0.847);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#get-info form input {
+  appearance: none;
+  margin-left: 0.45rem;
+  margin-right: 2rem;
+  background-color: #a8a1a7;
+  border: transparent solid;
+}
+
+#get-info form label {
+  margin-top: 0.05rem;
+}
+
+#get-info form button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgb(252, 196, 170);
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 1.5rem;
+  margin-left: 3rem;
+  border-radius: 0.35rem;
+}
+
+/*=================================================*/
+/*=================================================*/
+/*===================MEDIA-QUERIES=================*/
+/*=================================================*/
+/*=================================================*/
+
+/*-------------*/
+/*---DESKTOP---*/
+/*-------------*/
+
+/*------------*/
+/*---TABLET---*/
+/*------------*/
+
+@media (max-width: 48rem) {
+  main {
+    margin: 0 2rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    min-width: 44rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*---API section---*/
+
+@media (max-width: 48rem) {
+  .api-container {
+    width: 22.2rem;
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+}
+
+/*----------------*/
+/*---SMARTPHONE---*/
+/*----------------*/
+
+/*---main---*/
+
+@media (max-width: 26rem) {
+  main {
+    margin: 0 2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    min-width: 26rem;
+  }
+}
+
+/*---main content---*/
+
+@media (max-width: 26rem) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
